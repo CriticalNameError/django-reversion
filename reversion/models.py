@@ -196,6 +196,18 @@ class Version(models.Model):
         return ContentType.objects.db_manager(self._state.db).get_for_id(self.content_type_id)
 
     @property
+    def _revision_comment(self):
+        return self.revision.comment
+
+    @property
+    def _revision_user(self):
+        return self.revision.user
+
+    @property
+    def _revision_date(self):
+        return self.revision.date_created
+
+    @property
     def _model(self):
         return self._content_type.model_class()
 
