@@ -1,4 +1,10 @@
 ================
+Wagtail integration of django-reversion
+================
+
+This fork features some minor changes to make django-reversions work in combination with Wagtail's ModelAdmin class.
+
+================
 django-reversion
 ================
 
